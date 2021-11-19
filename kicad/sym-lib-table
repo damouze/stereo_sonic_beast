@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name stereo_sonic_beast-rescue)(type Legacy)(uri ${KIPRJMOD}/stereo_sonic_beast-rescue.lib)(options "")(descr ""))
+  (lib (name 2020-09-27_07-44-01)(type Legacy)(uri ${KIPRJMOD}/lib/Ultra_Librarian/2020-09-27_07-44-01.lib)(options "")(descr ""))
+  (lib (name 2021-11-18_09-54-37)(type Legacy)(uri ${KIPRJMOD}/lib/Ultra_Librarian/2021-11-18_09-54-37.lib)(options "")(descr ""))
+)

@@ -1,0 +1,69 @@
+Name     complete_latch.dig ;
+PartNo   00 ;
+Date     17.11.2021 ;
+Revision 01 ;
+Designer dmouse ;
+Company  unknown ;
+Assembly None ;
+Location unknown ;
+Device   g22v10 ;
+
+ar = 'b'0 ;
+sp = 'b'0 ;
+
+/* inputs */
+PIN 1 = CLK;
+PIN 2 = d_0;
+PIN 3 = d_1;
+PIN 4 = d_2;
+PIN 5 = d_3;
+PIN 6 = d_4;
+PIN 7 = d_5;
+PIN 8 = d_6;
+PIN 9 = d_7;
+PIN 10 = lr;
+PIN 11 = busy_in;
+
+/* outputs */
+PIN 14 = busy_out;
+PIN 15 = sl_n;
+PIN 16 = q_7n;
+PIN 17 = q_6n;
+PIN 18 = q_5n;
+PIN 19 = q_4n;
+PIN 20 = q_3n;
+PIN 21 = q_2n;
+PIN 22 = q_1n;
+PIN 23 = q_0n;
+
+/* sequential logic */
+q_0n.D = (d_0 & !lr & !sl_n) # (d_0 & lr & sl_n) # (!lr & q_0n & sl_n) # (lr & q_0n & !sl_n);
+q_0n.ar = ar ;
+q_0n.sp = sp ;
+q_1n.D = (d_1 & !lr & !sl_n) # (d_1 & lr & sl_n) # (!lr & q_1n & sl_n) # (lr & q_1n & !sl_n);
+q_1n.ar = ar ;
+q_1n.sp = sp ;
+q_2n.D = (d_2 & !lr & !sl_n) # (d_2 & lr & sl_n) # (!lr & q_2n & sl_n) # (lr & q_2n & !sl_n);
+q_2n.ar = ar ;
+q_2n.sp = sp ;
+q_3n.D = (d_3 & !lr & !sl_n) # (d_3 & lr & sl_n) # (!lr & q_3n & sl_n) # (lr & q_3n & !sl_n);
+q_3n.ar = ar ;
+q_3n.sp = sp ;
+q_4n.D = (d_4 & !lr & !sl_n) # (d_4 & lr & sl_n) # (!lr & q_4n & sl_n) # (lr & q_4n & !sl_n);
+q_4n.ar = ar ;
+q_4n.sp = sp ;
+q_5n.D = (d_5 & !lr & !sl_n) # (d_5 & lr & sl_n) # (!lr & q_5n & sl_n) # (lr & q_5n & !sl_n);
+q_5n.ar = ar ;
+q_5n.sp = sp ;
+q_6n.D = (d_6 & !lr & !sl_n) # (d_6 & lr & sl_n) # (!lr & q_6n & sl_n) # (lr & q_6n & !sl_n);
+q_6n.ar = ar ;
+q_6n.sp = sp ;
+q_7n.D = (d_7 & !lr & !sl_n) # (d_7 & lr & sl_n) # (!lr & q_7n & sl_n) # (lr & q_7n & !sl_n);
+q_7n.ar = ar ;
+q_7n.sp = sp ;
+sl_n.D = !sl_n;
+sl_n.ar = ar ;
+sl_n.sp = sp ;
+
+/* combinatorial logic */
+busy_out = busy_in # (!lr & !sl_n) # (lr & sl_n);

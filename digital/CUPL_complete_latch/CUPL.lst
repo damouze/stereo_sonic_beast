@@ -1,0 +1,91 @@
+LISTING FOR LOGIC DESCRIPTION FILE: CUPL.pld                         Page 1
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# MW-10400000
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Thu Nov 18 11:25:15 2021
+
+  1:Name     complete_latch.dig ;
+  2:PartNo   00 ;
+  3:Date     17.11.2021 ;
+  4:Revision 01 ;
+  5:Designer dmouse ;
+  6:Company  unknown ;
+  7:Assembly None ;
+  8:Location unknown ;
+  9:Device   g22v10 ;
+ 10:
+ 11:ar = 'b'0 ;
+ 12:sp = 'b'0 ;
+ 13:
+ 14:/* inputs */
+ 15:PIN 1 = CLK;
+ 16:PIN 2 = d_0;
+ 17:PIN 3 = d_1;
+ 18:PIN 4 = d_2;
+ 19:PIN 5 = d_3;
+ 20:PIN 6 = d_4;
+ 21:PIN 7 = d_5;
+ 22:PIN 8 = d_6;
+ 23:PIN 9 = d_7;
+ 24:PIN 10 = lr;
+ 25:PIN 11 = busy_in;
+ 26:
+ 27:/* outputs */
+ 28:PIN 14 = busy_out;
+ 29:PIN 15 = sl_n;
+ 30:PIN 16 = q_7n;
+ 31:PIN 17 = q_6n;
+ 32:PIN 18 = q_5n;
+ 33:PIN 19 = q_4n;
+ 34:PIN 20 = q_3n;
+ 35:PIN 21 = q_2n;
+ 36:PIN 22 = q_1n;
+ 37:PIN 23 = q_0n;
+ 38:
+ 39:/* sequential logic */
+ 40:q_0n.D = (d_0 & !lr & !sl_n) # (d_0 & lr & sl_n) # (!lr & q_0n & sl_n) # (lr & q_0n & !sl_n);
+ 41:q_0n.ar = ar ;
+ 42:q_0n.sp = sp ;
+ 43:q_1n.D = (d_1 & !lr & !sl_n) # (d_1 & lr & sl_n) # (!lr & q_1n & sl_n) # (lr & q_1n & !sl_n);
+ 44:q_1n.ar = ar ;
+ 45:q_1n.sp = sp ;
+ 46:q_2n.D = (d_2 & !lr & !sl_n) # (d_2 & lr & sl_n) # (!lr & q_2n & sl_n) # (lr & q_2n & !sl_n);
+ 47:q_2n.ar = ar ;
+ 48:q_2n.sp = sp ;
+ 49:q_3n.D = (d_3 & !lr & !sl_n) # (d_3 & lr & sl_n) # (!lr & q_3n & sl_n) # (lr & q_3n & !sl_n);
+ 50:q_3n.ar = ar ;
+ 51:q_3n.sp = sp ;
+ 52:q_4n.D = (d_4 & !lr & !sl_n) # (d_4 & lr & sl_n) # (!lr & q_4n & sl_n) # (lr & q_4n & !sl_n);
+ 53:q_4n.ar = ar ;
+
+LISTING FOR LOGIC DESCRIPTION FILE: CUPL.pld                         Page 2
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# MW-10400000
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Thu Nov 18 11:25:15 2021
+
+ 54:q_4n.sp = sp ;
+ 55:q_5n.D = (d_5 & !lr & !sl_n) # (d_5 & lr & sl_n) # (!lr & q_5n & sl_n) # (lr & q_5n & !sl_n);
+ 56:q_5n.ar = ar ;
+ 57:q_5n.sp = sp ;
+ 58:q_6n.D = (d_6 & !lr & !sl_n) # (d_6 & lr & sl_n) # (!lr & q_6n & sl_n) # (lr & q_6n & !sl_n);
+ 59:q_6n.ar = ar ;
+ 60:q_6n.sp = sp ;
+ 61:q_7n.D = (d_7 & !lr & !sl_n) # (d_7 & lr & sl_n) # (!lr & q_7n & sl_n) # (lr & q_7n & !sl_n);
+ 62:q_7n.ar = ar ;
+ 63:q_7n.sp = sp ;
+ 64:sl_n.D = !sl_n;
+ 65:sl_n.ar = ar ;
+ 66:sl_n.sp = sp ;
+ 67:
+ 68:/* combinatorial logic */
+ 69:busy_out = busy_in # (!lr & !sl_n) # (lr & sl_n);
+ 70:
+ 71:
+
+
+
+Jedec Fuse Checksum       (f101)
+Jedec Transmit Checksum   (a7bf)

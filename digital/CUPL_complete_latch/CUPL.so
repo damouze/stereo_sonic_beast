@@ -1,0 +1,46 @@
+CSIM(WM): CUPL Simulation Program
+Version 5.0a Serial# MW-10400000
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+CREATED Thu Nov 18 11:25:15 2021
+
+LISTING FOR SIMULATION FILE: CUPL.si
+
+   1: Name     complete_latch.dig;
+   2: PartNo   00;
+   3: Date     17.11.2021;
+   4: Revision 01;
+   5: Designer dmouse;
+   6: Company  unknown;
+   7: Assembly None;
+   8: Location unknown;
+   9: Device   g22v10;
+  10: 
+  11: 
+  12: ORDER: busy_in, busy_out, d_0, d_1, d_2, d_3, d_4, d_5, d_6, d_7, lr, q_0n, q_1n, q_2n, q_3n, q_4n, q_5n, q_6n, q_7n, sl_n, !CLK; 
+  13: 
+  14: 
+
+==============================
+       b                      
+      bu                      
+      us                      
+      sy                      
+      y_         qqqqqqqqs!   
+      _odddddddd ________lC   
+      iu________l01234567_L   
+      nt01234567rnnnnnnnnnK   
+==============================
+0001: *X*********LLLLLLLLL*
+      ^ ^^^^^^^^^         ^
+[0021sa] invalid test value:  *
+[0021sa] invalid test value:  *
+[0021sa] invalid test value:  *
+[0021sa] invalid test value:  *
+[0021sa] invalid test value:  *
+[0021sa] invalid test value:  *
+[0021sa] invalid test value:  *
+[0021sa] invalid test value:  *
+[0021sa] invalid test value:  *
+[0021sa] invalid test value:  *
+[0021sa] invalid test value:  *
+

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ultra_librarian)(type KiCad)(uri C:/Users/dmouse/ownCloud/Projects/KiCAD/stereo_sonic_beast/lib/Ultra_Librarian/footprints.pretty)(options "")(descr ""))
+)
