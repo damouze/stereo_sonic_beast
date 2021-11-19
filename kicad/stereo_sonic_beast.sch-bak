@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L silly_bastard-rescue:Mounting_Hole_PAD-Mechanical MK1
+L Mechanical:MountingHole_Pad MK1
 U 1 1 5A6CFED2
 P 10200 800
 F 0 "MK1" H 10300 851 50  0000 L CNN
@@ -25,7 +25,7 @@ F 3 "" H 10200 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L silly_bastard-rescue:Mounting_Hole_PAD-Mechanical MK2
+L Mechanical:MountingHole_Pad MK2
 U 1 1 5A6CFF98
 P 10200 1100
 F 0 "MK2" H 10300 1151 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "" H 10200 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L silly_bastard-rescue:Mounting_Hole_PAD-Mechanical MK3
+L Mechanical:MountingHole_Pad MK3
 U 1 1 5A6CFFFA
 P 10200 1400
 F 0 "MK3" H 10300 1451 50  0000 L CNN
@@ -47,7 +47,7 @@ F 3 "" H 10200 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L silly_bastard-rescue:Mounting_Hole_PAD-Mechanical MK4
+L Mechanical:MountingHole_Pad MK4
 U 1 1 5A6D003F
 P 10200 1700
 F 0 "MK4" H 10300 1751 50  0000 L CNN

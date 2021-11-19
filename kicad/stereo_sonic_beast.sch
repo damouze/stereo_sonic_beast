@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Stereo Sonic Beast"
-Date "2021-10-24"
-Rev ""
+Date "2021-11-19"
+Rev "1.4"
 Comp ""
 Comment1 ""
 Comment2 ""
