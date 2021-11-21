@@ -19,7 +19,7 @@ Ok, enough ranting. Let's have a look at this project.
 
 ## The Stereo Sonic Beast
 
-A while ago, youtuber Necroware posted a [video]: https://www.youtube.com/watch?v=DKLKtH_rQJU about a recreation of the (in)famous [Covox]: https://en.wikipedia.org/wiki/Covox_Speech_Thing he did. For those of you who may not know: this was a device from the late eighties and early nineties that would turn your parallell printer port into an audio device. It was basically a DAC constructed of a set of resistors in a circuit that is usually called a resistor ladder. 
+A while ago, youtuber Necroware posted a [video]:(https://www.youtube.com/watch?v=DKLKtH_rQJU) about a recreation of the (in)famous [Covox]:(https://en.wikipedia.org/wiki/Covox_Speech_Thing) he did. For those of you who may not know: this was a device from the late eighties and early nineties that would turn your parallell printer port into an audio device. It was basically a DAC constructed of a set of resistors in a circuit that is usually called a resistor ladder. 
 
 The design was simple, yet elegant and for its time it produced decent audio output and just about the only thing the computer it was attached to needed to do to make it output audio was to write data to the printer port at the appropiate rate. Necroware calls his recreation the "Silly Sound Bastard". It had a way of producing dual-mono sound by connecting the device's single audio channel to both output channels on the audio jack.
 
