@@ -25,7 +25,7 @@ The design was simple, yet elegant and for its time it produced decent audio out
 
 This made me wonder if it were possible to design a variant of this that would output actual stereo sound and decided that I would attempt it. 
 
-What you find in this repository is one of the first iterations of this design. What it basically boils down to is that the actual audio output comes from two latches, one for each channel and that each channel has its own DAC. The input pin of the latch responsible for the left channel is enabled first, the one for the right channel is active next, and so on. 
+What you find in this repository is one of the first iterations of this design. What it basically boils down to is that the actual audio output comes from two latches, one for each channel and that each channel has its own DAC. The input pins of the latch responsible for the left channel are enabled first, the ones for the right channel are enabled next, and so on. 
 
 In theory, this should provide stereo capability to the original design and the only thing that the computer needs to do is to send the sample data for the left and right channel in an interleaved fashion: the octet for the left channel is sent first, the octet for the right channel is sent next, and so on.
 
