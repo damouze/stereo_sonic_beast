@@ -1387,9 +1387,7 @@ F 3 " ~" H 1200 2000 50  0001 C CNN
 	1    1200 2000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1000 7200 1350 7200
-Text Label 1000 7200 0    50   ~ 0
+Text Label 1050 7200 0    50   ~ 0
 ~STROBE
 Text Label 5750 6300 2    50   ~ 0
 RD7
@@ -1455,8 +1453,6 @@ Text Label 1000 6600 0    50   ~ 0
 D6
 Text Label 1000 6700 0    50   ~ 0
 D7
-Wire Wire Line
-	1350 6900 1000 6900
 Text Label 1000 6900 0    50   ~ 0
 BSY0_IN
 $Comp
@@ -1608,20 +1604,20 @@ BUSY
 $Comp
 L Device:R R2
 U 1 1 61A350EA
-P 1000 7300
-F 0 "R2" H 1070 7346 50  0000 L CNN
-F 1 "4.7k" H 1070 7255 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 930 7300 50  0001 C CNN
-F 3 "~" H 1000 7300 50  0001 C CNN
-	1    1000 7300
+P 950 7300
+F 0 "R2" H 1020 7346 50  0000 L CNN
+F 1 "4.7k" H 1020 7255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 880 7300 50  0001 C CNN
+F 3 "~" H 950 7300 50  0001 C CNN
+	1    950  7300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 7700 1000 7450
-Text Label 1000 7700 1    50   ~ 0
+	950  7700 950  7450
+Text Label 950  7700 1    50   ~ 0
 GND
 Wire Wire Line
-	1000 6900 1000 7150
+	950  6900 950  7150
 Wire Wire Line
 	650  6800 650  7150
 NoConn ~ 1950 1300
@@ -1689,4 +1685,8 @@ Wire Wire Line
 	3700 5150 3950 5150
 Text Label 3700 5150 0    50   ~ 0
 GND
+Wire Wire Line
+	950  6900 1350 6900
+Wire Wire Line
+	1050 7200 1350 7200
 $EndSCHEMATC
