@@ -37,5 +37,4 @@ What you find in this repository is one of the first iterations of this design. 
 
 In theory, this should provide stereo capability to the original design and the only thing that the computer needs to do is to send the sample data for the left and right channel in an interleaved fashion: the octet for the left channel is sent first, the octet for the right channel is sent next, and so on.
 
-So I present to you The Stereo Sonic Beast.
-
+So I present to you: The Stereo Sonic Beast.
